@@ -97,6 +97,72 @@ section > h1 {
   color: #353838;
 }
 
+/* About Me Section */
+.about {
+  display: flex;
+}
+.about > div {
+  flex: 1;
+}
+.about .summary {
+  color: #333;
+  display: flex;
+  flex: 5;
+  border-radius: 1.3rem;
+  padding: 3vh 3vw;
+  box-shadow: rgba(0, 0, 0, 0.08) -5px 3px 8px;
+  position: relative;
+  gap: 10px;
+}
+/* .theme-light .about .summary {
+  background: #fff;
+}
+.theme-dark .about .summary {
+  background: #fff;
+} */
+/* .theme-light .about .summary::after {
+  border-right-color: #fff;
+}
+.theme-dark .about .summary::after {
+  border-right-color: #fff;
+} */
+/* .about .summary::after {
+  border: 0.75em solid transparent;
+  border-left: none;
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50px;
+} */
+.about .summary > div {
+  flex: 1;
+}
+.about .summary > div button {
+  margin: 3vh 0 1.5vh;
+}
+.about .skills {
+  flex: 1;
+}
+.progress_bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  margin: 1.4vh 0;
+  height: 8px;
+  border-radius: 30px;
+}
+.progress_bar .bar {
+  height: 8px;
+  border-radius: 30px;
+  background: #ffd15c;
+}
+.skills_description {
+  display: flex;
+}
+.skills_description h4 + h4 {
+  margin-left: auto;
+  font-weight: 200;
+}
+
 @media (max-width: 630px) {
   .navbar-toggle {
     display: block;
