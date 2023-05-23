@@ -351,6 +351,139 @@ section > h1 {
   align-items: center;
 }
 
+/* Experience Section */
+.experience {
+  display: flex;
+  gap: 2rem;
+  color: #333;
+}
+.experience .square {
+  text-align: center;
+  border-radius: 2rem;
+  padding: 5vh 2.5vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+.theme-light .experience .square {
+  background-color: #fff;
+}
+.theme-dark .experience .square {
+  background-color: #fff;
+}
+.experience .square:hover {
+  transform: scale(1.05);
+}
+.experience .column {
+  display: flex;
+  overflow: hidden;
+}
+.experience .column .icon {
+  font-size: 1.6rem;
+  color: #ffd15c;
+  margin-right: 1rem;
+}
+.experience .column .icon svg {
+  margin-bottom: 0.5rem;
+}
+.experience .column .line {
+  height: 100%;
+  width: 2px;
+  background: #ffd15c;
+  margin: auto;
+}
+.experience .column .infos .technologies {
+  gap: 0.3rem;
+  margin: 1vh 0 1.375vw;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+.experience .column .infos .technologies .item {
+  border: solid 1px #333;
+  padding: 0.25vh 1vw;
+  border-radius: 10rem;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+}
+.experience .column .infos .technologies .item.Node {
+  background-color: #4da53f;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.React {
+  background-color: #2f74c0;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.JavaScript {
+  background-color: #f7d800;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.Bootstrap {
+  background-color: #5e3b7f;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.Styled-Components {
+  background-color: #555;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.Express {
+  background-color: #333;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.MongoDB {
+  background-color: #4da53f;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.MySQL {
+  background-color: #2f74c0;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.PostgreSQL {
+  background-color: #2f74c0;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.Typescript {
+  background-color: #2f74c0;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.SocketIO {
+  background-color: #333;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.HTML {
+  background-color: #f75421;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies .item.CSS {
+  background-color: #2f74c0;
+  border: none;
+  color: #fdfdfd;
+}
+.experience .column .infos .technologies {
+  margin-bottom: 2.75vh;
+}
+.experience .column .infos > p {
+  color: #808080;
+}
+.experience .column .infos a {
+  color: #333;
+  text-decoration: none;
+}
+
 @media (max-width: 630px) {
   .navbar-toggle {
     display: block;
