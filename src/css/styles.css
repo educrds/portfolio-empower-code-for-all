@@ -4,30 +4,32 @@
   border: 0;
   color: inherit;
   vertical-align: baseline;
+  user-select: none;
+  transition: all 0.03s ease-in-out, color 0.03s ease-in-out;
 }
 /* Theme Light and Dark Setup */
-/* .theme-light body {
-}
-
-.theme-dark body {
-  color: #ccc;
-  background-color: #353838;
-} */
 body {
-  transition: background-color 0.03s ease-in-out, color 0.03s ease-in-out;
-  color: #353838;
-  background-color: #f9f9ff;
+  /* color: #353838;
+  background-color: #f9f9ff; */
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   margin: 0 auto;
   padding: 2vh 8vw;
+}
+.theme-light {
+  color: #333;
+  background-color: #f9f9ff;
+}
+
+.theme-dark {
+  color: #ccc;
+  background-color: #353838;
 }
 ul {
   list-style: none;
   display: flex;
   margin-left: auto;
   align-items: center;
-  gap: 5vw;
 }
 a {
   text-decoration: none;
@@ -47,12 +49,6 @@ section > h1 {
   font-size: 2rem;
 }
 
-.wrapper {
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
-  margin: 0 auto;
-  padding: 2vh 6vw;
-}
 .container {
   display: flex;
   justify-content: space-between;
@@ -74,10 +70,22 @@ section > h1 {
   justify-content: space-between;
   list-style-type: none;
   cursor: pointer;
+  gap: 5vw;
 }
 
 .nav-elements ul a:hover {
   font-weight: 500;
+}
+
+.theme-light .nav-elements #theme-button::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f111';
+  font-weight: bold;
+}
+
+.theme-dark .nav-elements #theme-button::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f111';
 }
 
 /* Main Container Section */
@@ -97,10 +105,7 @@ section > h1 {
   font-size: 1.75rem;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 5vh 0;
-}
-
-.main_container ul li {
-  color: #353838;
+  gap: 5vw;
 }
 
 /* About Me Section */
@@ -118,6 +123,7 @@ section > h1 {
   padding: 3vh 3vw;
   box-shadow: rgba(0, 0, 0, 0.08) -5px 3px 8px;
   position: relative;
+  background-color: #fff;
   gap: 10px;
 }
 /* .theme-light .about .summary {
@@ -179,6 +185,7 @@ section > h1 {
   border-radius: 1.3rem;
   padding: 3vh 1.5vw;
   row-gap: 5vh;
+  background-color: #fff;
 }
 .tech-list div {
   display: flex;
@@ -393,7 +400,16 @@ section > h1 {
   background: #ffd15c;
   margin: auto;
 }
-.experience .column .infos .technologies {
+.experience .column .infos .infos-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.experience .column .infos .infos-title > i {
+  font-size: 15px;
+}
+.experience .column .infos .technologies > ul {
   gap: 0.3rem;
   margin: 1vh 0 1.375vw;
   flex-wrap: wrap;
