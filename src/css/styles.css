@@ -66,6 +66,14 @@ footer {
   height: 100%;
 }
 
+.projects > div:hover,
+.experience .square:hover,
+.tech-list:hover,
+.summary:hover,
+.main_container div:hover {
+  transform: scale(1.05);
+}
+
 /* Navbar Section */
 .navbar-toggle {
   display: none;
@@ -136,32 +144,11 @@ footer {
   background-color: #fff;
   gap: 10px;
 }
-/* .theme-light .about .summary {
-  background: #fff;
-}
-.theme-dark .about .summary {
-  background: #fff;
-} */
-/* .theme-light .about .summary::after {
-  border-right-color: #fff;
-}
-.theme-dark .about .summary::after {
-  border-right-color: #fff;
-} */
-/* .about .summary::after {
-  border: 0.75em solid transparent;
-  border-left: none;
-  content: '';
-  position: absolute;
-  right: 100%;
-  top: 50px;
-} */
+
 .about .summary > div {
   flex: 1;
 }
-.about .summary > div button {
-  margin: 3vh 0 1.5vh;
-}
+
 .about .skills {
   flex: 1;
 }
@@ -207,9 +194,6 @@ footer {
   display: flex;
   text-align: center;
   font-size: 42px;
-}
-.tech-list div svg {
-  font-size: 4rem;
 }
 .tech-list div p {
   font-size: 1.1rem;
@@ -268,11 +252,7 @@ footer {
   font-size: 0.9rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
 }
-.projects > div .technologies .item.Node {
-  background-color: #4da53f;
-  border: none;
-  color: #fdfdfd;
-}
+
 .projects > div .technologies .item.React {
   background-color: #2f74c0;
   border: none;
@@ -293,46 +273,7 @@ footer {
   border: none;
   color: #fdfdfd;
 }
-.projects > div .technologies .item.Express {
-  background-color: #333;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.MongoDB {
-  background-color: #4da53f;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.MySQL {
-  background-color: #2f74c0;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.PostgreSQL {
-  background-color: #2f74c0;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.Typescript {
-  background-color: #2f74c0;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.SocketIO {
-  background-color: #333;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.HTML {
-  background-color: #f75421;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.CSS {
-  background-color: #2f74c0;
-  border: none;
-  color: #fdfdfd;
-}
+
 .theme-light .projects > div {
   background-color: #fff;
 }
@@ -343,16 +284,11 @@ footer {
   text-align: center;
   gap: 0.5rem;
 }
-.projects > div .title svg {
-  font-size: 1.75rem;
-}
 .projects > div .description p {
   margin-bottom: 4vh;
   text-align: left;
 }
-.projects > div:hover {
-  transform: scale(1.05);
-}
+
 .projects .links {
   font-size: 1.35rem;
   gap: 1rem;
@@ -390,9 +326,6 @@ footer {
 .theme-dark .experience .square {
   background-color: #fff;
 }
-.experience .square:hover {
-  transform: scale(1.05);
-}
 .experience .column {
   display: flex;
   overflow: hidden;
@@ -401,9 +334,6 @@ footer {
   font-size: 1.6rem;
   color: #ffd15c;
   margin-right: 1rem;
-}
-.experience .column .icon svg {
-  margin-bottom: 0.5rem;
 }
 .experience .column .line {
   height: 100%;
@@ -452,11 +382,6 @@ footer {
 }
 .experience .column .infos .technologies .item.Bootstrap {
   background-color: #5e3b7f;
-  border: none;
-  color: #fdfdfd;
-}
-.experience .column .infos .technologies .item.Styled-Components {
-  background-color: #555;
   border: none;
   color: #fdfdfd;
 }
