@@ -9,12 +9,11 @@
 }
 /* Theme Light and Dark Setup */
 body {
-  /* color: #353838;
-  background-color: #f9f9ff; */
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   margin: 0 auto;
   padding: 2vh 8vw;
+  /* width: 100%; */
 }
 .theme-light {
   color: #333;
@@ -47,6 +46,11 @@ section {
 section > h1 {
   margin: 4vh 0;
   font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .container {
@@ -365,6 +369,7 @@ section > h1 {
   color: #333;
 }
 .experience .square {
+  flex: 1;
   text-align: center;
   border-radius: 2rem;
   padding: 5vh 2.5vw;
@@ -500,6 +505,11 @@ section > h1 {
   text-decoration: none;
 }
 
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 @media (max-width: 630px) {
   .navbar-toggle {
     display: block;
@@ -515,12 +525,6 @@ section > h1 {
     overflow: hidden;
     z-index: 1;
   }
-  .theme-light .nav-elements {
-    background: #f9f9ff;
-  }
-  .theme-dark .nav-elements {
-    background: #353838;
-  }
   .nav-elements.active {
     width: 100%;
   }
@@ -534,5 +538,9 @@ section > h1 {
   }
   .tech-list div {
     flex: 1 0 50%;
+  }
+  .experience,
+  .projects {
+    flex-direction: column;
   }
 }
