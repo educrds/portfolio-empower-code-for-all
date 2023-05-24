@@ -7,22 +7,28 @@
   user-select: none;
   transition: all 0.03s ease-in-out, color 0.03s ease-in-out;
 }
+:root {
+  --bg-light: #f9f9ff;
+  --font-light: #333;
+
+  --bg-dark: #353838;
+  --font-dark: #ccc;
+}
 /* Theme Light and Dark Setup */
+.theme-light {
+  color: var(--font-light);
+  background-color: var(--bg-light);
+}
+
+.theme-dark {
+  color: var(--font-dark);
+  background-color: var(--bg-dark);
+}
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   margin: 0 auto;
   padding: 2vh 8vw;
-  /* width: 100%; */
-}
-.theme-light {
-  color: #333;
-  background-color: #f9f9ff;
-}
-
-.theme-dark {
-  color: #ccc;
-  background-color: #353838;
 }
 ul {
   list-style: none;
@@ -514,11 +520,17 @@ footer {
   .navbar-toggle {
     display: block;
   }
+
+  .theme-dark .nav-elements {
+    background-color: var(--bg-dark);
+  }
+  .theme-light .nav-elements {
+    background-color: var(--bg-light);
+  }
   .nav-elements {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
     width: 0px;
     height: calc(100vh - 60px);
     transition: width 0.3s ease-in;
