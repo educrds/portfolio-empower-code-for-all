@@ -162,7 +162,7 @@ footer {
 .progress_bar .bar {
   height: 8px;
   border-radius: 30px;
-  background: #ffd15c;
+  background: #1d3557;
 }
 .skills_description {
   display: flex;
@@ -332,13 +332,13 @@ footer {
 }
 .experience .column .icon {
   font-size: 1.6rem;
-  color: #ffd15c;
+  color: #1d3557;
   margin-right: 1rem;
 }
 .experience .column .line {
   height: 100%;
   width: 2px;
-  background: #ffd15c;
+  background: #1d3557;
   margin: auto;
 }
 .experience .column .infos .infos-title {
