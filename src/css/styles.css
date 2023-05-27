@@ -253,11 +253,6 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
 }
 
-.projects > div .technologies .item.React {
-  background-color: #2f74c0;
-  border: none;
-  color: #fdfdfd;
-}
 .projects > div .technologies .item.JavaScript {
   background-color: #f7d800;
   border: none;
@@ -265,11 +260,6 @@ footer {
 }
 .projects > div .technologies .item.Bootstrap {
   background-color: #5e3b7f;
-  border: none;
-  color: #fdfdfd;
-}
-.projects > div .technologies .item.Styled-Components {
-  background-color: #555;
   border: none;
   color: #fdfdfd;
 }
